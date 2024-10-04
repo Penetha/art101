@@ -8,5 +8,5 @@
 .family {
   margin: 10px;
   max-width: 100%;
-  max-height:fit-content;
+  max-height: min-content;
 }
