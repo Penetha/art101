@@ -1,7 +1,9 @@
 h1{
-    font: "Times new roman";
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: xx-large;
     font-style: bold italic;
     color-scheme: rgb(210, 63, 156) ;
     color: aquamarine;
+    background-color: aqua papayawhip;
+    border: 0vmin blueviolet;
 }
