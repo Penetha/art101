@@ -1,14 +1,14 @@
 div{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Georgia;
     font-size: xx-large;
     font-style: bold italic;
     color-scheme: rgb(210, 63, 156) ;
     color: rgb(255, 174, 127);
-    background-color: aqua;
+    background-color: aqua lemonchiffon;
     border: 10px blueviolet;
 }
 body{
     background-color: chartreuse;
+    background-size: 15cm;
     border-radius: 10%;
-    box-sizing: border-box;
 }
