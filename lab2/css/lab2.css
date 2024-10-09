@@ -3,7 +3,11 @@ div{
     font-size: xx-large;
     font-style: bold italic;
     color-scheme: rgb(210, 63, 156) ;
-    color: aquamarine;
+    color: rgb(255, 174, 127);
     background-color: aqua papayawhip;
-    border: 0vmin blueviolet;
+    border: 10cm blueviolet;
+}
+head{
+    background-color: chartreuse;
+    box-sizing: content-box;
 }
