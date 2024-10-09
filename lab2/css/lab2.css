@@ -4,8 +4,8 @@ div{
     font-style: bold italic;
     color-scheme: rgb(210, 63, 156) ;
     color: rgb(255, 174, 127);
-    background-color: aqua lemonchiffon;
-    border: 10px blueviolet;
+    background-color: lemonchiffon;
+    border: 10px, double line, blueviolet;
 }
 body{
     background-color: chartreuse;
