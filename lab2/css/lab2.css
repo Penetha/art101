@@ -8,11 +8,12 @@ div{
     border-style: bold line;
     border-radius: 5%;
     border-color: blueviolet;
+    border-width: 2mm;
 }
 body{
     background-color: chartreuse;
     background-size: 15cm;
     border-radius: 10%;
     border-color: black;
-    border-width: 50%;
+    border-width: 5mm;
 }
