@@ -4,10 +4,10 @@ div{
     font-style: bold italic;
     color-scheme: rgb(210, 63, 156) ;
     color: rgb(255, 174, 127);
-    background-color: aqua papayawhip;
+    background-color: aqua;
     border: 10cm blueviolet;
 }
-head{
+body{
     background-color: chartreuse;
     box-sizing: content-box;
 }
