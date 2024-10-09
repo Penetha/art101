@@ -5,7 +5,9 @@ div{
     color-scheme: rgb(210, 63, 156) ;
     color: rgb(255, 174, 127);
     background-color: lemonchiffon;
-    border: 10px, double line, blueviolet;
+    border-style: bold line;
+    border-radius: 5%;
+    border-color: blueviolet;
 }
 body{
     background-color: chartreuse;
