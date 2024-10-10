@@ -1,19 +1,58 @@
-div{
-    font-family: Georgia;
-    font-size: xx-large;
-    font-style: bold italic;
-    color-scheme: rgb(210, 63, 156) ;
-    color: rgb(255, 174, 127);
-    background-color: lemonchiffon;
-    border-style: bold line;
-    border-radius: 5%;
-    border-color: blueviolet;
-    border-width: 2mm;
+#content{
+    border-style: bold line (1,4);
+    border-radius: 10%;
+    border-color: rgb(246, 30, 84);
+    border-width: 40px 40px;
+    border-style: dotted dotted;
+    background-size: 20px 20px;
+    box-sizing: large ;
+    background-color: rgba(188, 242, 113, 0.966);
+    box-decoration-break: slice;
+    text-align: center;
+    text-wrap: balance;
+    padding: 25px 25px;
 }
 body{
-    background-color: chartreuse;
-    background-size: 15cm;
-    border-radius: 10%;
-    border-color: black;
-    border-width: 5mm;
+    background-color: seagreen;
+    padding: 50px 25px;
 }
+h1{
+    font-family: Georgia;
+    font-size: 50px ;
+    font-style: bold italic;
+    color: darkred;
+    padding: 10px 10px;
+    border-radius: 5%;
+    border-color: rgb(13, 0, 128);
+    border-width: 5px 5px;
+    border-style: double dotted;
+    background-size: 20px 20px;
+    background-color: rgba(127, 242, 255, 0.744);
+}
+h4,h2,h3{
+    font-family: Georgia;
+    font-size: 25px ;
+    font-style: bold italic;
+    font-weight: 1000;
+    color: darkred;
+    padding: 10px 10px;
+    border-radius: 5%;
+    border-color: green;
+    border-width: 5px 5px;
+    border-style: double dotted;
+    background-size: 20px 20px;
+    background-color: aquamarine;
+    box-sizing: large ;
+}
+p1,p2,p3{
+    font-family: Georgia;
+    font-size: 25px ;
+    font-style: bold italic;
+    font-variant: ruby ;
+    font-weight: 700 ;
+    color: midnightblue;
+    padding: 10px 10px;
+    text-align: center;
+    text-wrap: wrap;
+}
+
