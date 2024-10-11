@@ -1,13 +1,10 @@
 #content{
-    border-style: bold line (1,4);
     border-radius: 10%;
     border-color: rgb(246, 30, 84);
     border-width: 40px 40px;
     border-style: dotted dotted;
     background-size: 20px 20px;
-    box-sizing: large ;
     background-color: rgba(188, 242, 113, 0.966);
-    box-decoration-break: slice;
     text-align: center;
     text-wrap: balance;
     padding: 25px 25px;
@@ -19,7 +16,7 @@ body{
 h1{
     font-family: Georgia;
     font-size: 50px ;
-    font-style: bold italic;
+    font-style: italic;
     color: darkred;
     padding: 10px 10px;
     border-radius: 5%;
@@ -32,7 +29,7 @@ h1{
 h4,h2,h3{
     font-family: Georgia;
     font-size: 25px ;
-    font-style: bold italic;
+    font-style: italic;
     font-weight: 1000;
     color: darkred;
     padding: 10px 10px;
@@ -42,12 +39,11 @@ h4,h2,h3{
     border-style: double dotted;
     background-size: 20px 20px;
     background-color: aquamarine;
-    box-sizing: large ;
 }
 p1,p2,p3{
     font-family: Georgia;
     font-size: 25px ;
-    font-style: bold italic;
+    font-style: italic;
     font-variant: ruby ;
     font-weight: 700 ;
     color: midnightblue;
