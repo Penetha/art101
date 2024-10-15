@@ -43,6 +43,7 @@ h1 {
   margin-bottom: 10px;
   border: solid 1px rgb(218, 197, 218);
   background-color: rgb(244, 205, 244);
+  font-size: medium;
   column-count: 2;
   column-rule: 2px solid lightblue;
   column-gap: 100px;
