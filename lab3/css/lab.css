@@ -8,12 +8,13 @@
     background-color: #DDD8C4;
   }
 
-.figure1.figure2.figure3 {
-    padding: 5px;
+figure1,figure2,figure3 {
+    padding: 5px 10px;
     margin: contain;
     border: 5px solid black;
     object-fit: cover;
     max-width: 500px;
+    margin-bottom: 10px;
   }
   
 figcaption {
@@ -22,4 +23,12 @@ figcaption {
     font-style: italic;
     padding: 2px;
     text-align: center;
+    object-fit: cover;
   }
+
+h6,h4,h5 {
+  font-weight: 300px;
+  font-style: oblique;
+  color: brown;
+  font-size: x-large;
+}
