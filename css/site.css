@@ -4,12 +4,13 @@
 
 /* we can select an html element tag, in this case "body" will apply to the whole document */
 body {
-  background-color: #50808E;
+  background-color:  rgb(87, 4, 114) ;
 }
 
 /* we can have rules apply to multiple elements at the same time with commas */
 h1,h2,h3 {
-  font-family: sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
 }
 
 /* and we can have rules that overlap other rules, both take effect */
@@ -17,20 +18,42 @@ h1 {
   letter-spacing: 5px;
   word-spacing: 5px;
   font-size: 200%;
+  color: aquamarine;
+  text-shadow: 3px 3px blueviolet;
 }
 
 /* the hashtag in a CSS selector selects an element by id, e.g., id="content" */
 #content {
   margin: 10px;
   padding: 10px;
-  border: solid 1px #888;
-  background-color: #84B59F;
+  border: solid 1px rgb(102, 102, 141);
+  background-color:  purple;
+}
+
+#lab {
+  margin: 10px;
+  padding: 10px;
+  border: solid 1px rgb(102, 102, 141);
+  background-color: purple;
+  
+}
+
+.labs-section {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: solid 1px rgb(218, 197, 218);
+  background-color: rgb(244, 205, 244);
+  column-count: 2;
+  column-rule: 2px solid lightblue;
+  column-gap: 100px;
+  column-width: 250px;
 }
 
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
 .minor-section {
   padding: 10px;
   margin-bottom: 10px;
-  border: solid 1px #888;
-  background-color: #A3C9A8;
+  border: solid 1px rgb(218, 197, 218);
+  background-color: rgb(244, 205, 244);
+  
 }

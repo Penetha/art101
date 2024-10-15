@@ -1,12 +1,75 @@
 /* this css file will only style the homepage of our site */
 
-.cat-photo {
+
+.my-portrait {
   margin: 10px;
   max-width: 500px;
+  max-height: fit-content;
+  object-fit: cover;
+  padding: 5px 5px;
+  margin-bottom: 5px;
 }
 
-.family {
-  margin: 10px;
-  max-width: 100%;
-  max-height: 50%;
+h2 {
+  font-family: cursive;
+  font-size: x-large;
+  color: blueviolet;
+  text-shadow: 2px 2px 2px brown;
+  float: top right;
 }
+
+h3 {
+  font-family: cursive;
+  font-size: x-large;
+  color: lavender;
+  text-shadow: 2px 2px 2px blueviolet;
+  float: top right;
+}
+
+p1,p2 {
+  text-wrap: balance;
+  object-fit: contain;
+  text-align: left;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 300;
+  font-size: medium;
+  line-break: loose;
+}
+
+p1,p2,p3::before {
+  content: "\A";
+  white-space: pre-wrap;
+  display: block;
+}
+p3{
+  text-wrap: balance;
+  text-align: left;
+  text-indent: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 300;
+  font-size: medium;
+  line-break: loose;
+}
+
+.minor-section ul{
+  color: black;
+  border: 1px solid blueviolet; 
+  list-style-type: square;
+  
+}
+
+.labs-section ul a:link, a:visited {
+  background-color: white;
+  border: 2px solid #f436d4;
+  object-fit: fill;
+  color: brown;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.labs-section ul a:hover, a:active {
+  background-color: lightgoldenrodyellow;
+}
+
