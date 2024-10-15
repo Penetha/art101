@@ -8,19 +8,20 @@
   object-fit: cover;
   padding: 5px 5px;
   margin-bottom: 5px;
+  border: 5px double maroon;
 }
 
 h2 {
   font-family: cursive;
-  font-size: x-large;
+  font-size: xx-large;
   color: blueviolet;
-  text-shadow: 2px 2px 2px brown;
+  text-shadow: 2px 2px 2px powderblue;
   float: top right;
 }
 
 h3 {
   font-family: cursive;
-  font-size: x-large;
+  font-size: xx-large;
   color: lavender;
   text-shadow: 2px 2px 2px blueviolet;
   float: top right;
@@ -73,3 +74,12 @@ p3{
   background-color: lightgoldenrodyellow;
 }
 
+.span a:link {
+  text-decoration: none;
+  display: inline-block;
+}
+
+
+.span a:hover {
+  background-color: lightgoldenrodyellow;
+}

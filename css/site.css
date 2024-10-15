@@ -18,7 +18,7 @@ h1 {
   letter-spacing: 5px;
   word-spacing: 5px;
   font-size: 200%;
-  color: aquamarine;
+  color: powderblue;
   text-shadow: 3px 3px blueviolet;
 }
 
@@ -43,7 +43,7 @@ h1 {
   margin-bottom: 10px;
   border: solid 1px rgb(218, 197, 218);
   background-color: rgb(244, 205, 244);
-  font-size: medium;
+  font-size: larger;
   column-count: 2;
   column-rule: 2px solid lightblue;
   column-gap: 100px;
