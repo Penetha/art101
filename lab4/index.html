@@ -2,7 +2,7 @@
 <html>
 <head>
 	<!-- This title is used for tabs and bookmarks -->
-	<title>Lab X - Subject/Topic</title>
+	<title>Lab 4 - Pseudocoding and Problem-solving</title>
 
 	<!-- Use UTF character set, a good idea with any webpage -->
   	<meta charset="UTF-8" />
@@ -23,25 +23,50 @@
 	<!-- Style this page by changing the CSS in ../css/site.css or css/lab.css -->
 	<main id="content">
 		<section>
-			<h1>Lab X - Subject/Topic</h1>
+			<h1>Lab 4 - Pseudocoding and Problem-solving</h1>
 			<div class="minor-section">
 					<h2>Challenge</h2>
-					<p>Restate the challenge of the lab here.</p>
+					<p>Finding games that can be computerized and deciding one was a bit time-consuming. Also, it was a bit tedious to keep the steps as simple and direct while writing psuedo-code</p>
 			</div>
 
 			<div class="minor-section">
 					<h2>Problems</h2>
-					<p>What problems arose? How did you solve them? </p>
+					<p>Choosing a game that could be computerized and writing psueod-code for the same in direct and simple manner was a bit tedious. </p>
 			</div>
 
 			<div class="minor-section">
 					<h2>Reflection</h2>
-					<p>Put your reflections about this assignment here. How did it go? What kind of energy did you put into the assignment? </p>
+					<p>It felt good to write psuedo-code in detail after long-time. Throughout the process of writing psuedo-code, I noticed that inherently I was ensuring the flow of instructions is in order and provides a legit framework for coding. </p>
 			</div>
 
 			<div class="minor-section">
 					<h2>Results</h2>
 					<div id="output"></div>
+					<!-- Link to external JavaScript file -->
+					<pre><code>
+						Implementation of the Cows and Bulls game
+						Author: Penetha Jayakumar <pejayaku@ucsc.edu>
+						Date:10 October 2024
+
+						A pseudo-code for the Cows and Bulls game:
+						1. Get the number of letters as input, with any value between 3 and 8.
+						2. Get the number of attempts allowed as input, with any value between 8 and 25.
+						3. Get the number of player(s) involved in the game as input.
+						4. Generate the random word based on the number of letters input.
+							4.1 If one player, the computer is prompted to generate a word with a word length equal to the number of letters input. 
+							4.2 If two or more players are involved, prompt to select the player who needs to select or enter a random word. The selected player will now be prompted to select or enter the word of his choice, which should be validated to match the number of letters input.
+						5. Get a word guess as input with restricted word length.
+						6. Assess the guessed word with the word chosen.
+						7. Prompt the player stating the number of cows and bulls.
+						8. If 4 bulls, the player who guessed correctly wins.
+							8.1 Generate a prompt to display 'Winner is Player X' and proceed to the step 10. 
+						9. Otherwise, steps 5-7 are repeated until the word guessed has 4 bulls. 
+							9.1 If the number of attempts has been reached, generate a prompt 'Player X Lost. No more attempts available' and proceed to step 10.
+						10. Generate a Prompt with options for a new game or a new word or to end the game.
+							10.1 If new game is chosen, repeat from step 1.
+							10.2 If new word is chosen, repeat from step 4.
+							10.3 If exit is chosen, close the console.
+					</code></pre>
 			</div>
 		</section>
 		<nav id="links">

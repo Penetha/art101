@@ -7,3 +7,15 @@
     border: solid 1px #888;
     background-color: #DDD8C4;
   }
+
+code {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;
+    font-weight: 400;
+    background-origin: padding-box;
+    text-indent: 10%;
+    border: 5px 5px black ;
+    text-wrap: pretty ;
+    padding: 30px 20px;
+    margin-left: 50px;
+}
