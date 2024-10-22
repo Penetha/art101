@@ -8,19 +8,54 @@
     background-color: #DDD8C4;
   }
 
-#dio {
-  padding: 0px 0px;
-  border: 10px double black;
-  box-sizing: border-box;
-  object-fit: cover;
-  width: 26%;
-  float: inline-end;
-  
+.main-container {
+    display: flex;                     /* Use Flexbox to arrange children side by side */
+    justify-content: space-between;    /* Space between images and results */
+    align-items: flex-start;           /* Align items at the start */
+    margin-bottom: 20px;
+    flex-direction: row;
+    flex-wrap: wrap-reverse; 
+    width: 100%;              
 }
-/* img {
-  overflow-clip-margin: padding-box ;
-  overflow-x: 0;
-  overflow-y: 0;
-  overflow: hidden;
-  al;
-} */
+.main-container .minor-section {
+      display: flex;                     /* Use Flexbox to arrange results and script output side by side */
+      flex-direction: column;            /*Stack headers on top*/
+      justify-content: flex-start;       /*Align items at the start*/
+      width: 100%;                       
+      flex-wrap: wrap;
+      
+      #output{
+        width: 50%;
+        
+      }
+      .output{
+        width: 50%;
+        border: 10px double darkblue;
+      }
+}
+
+
+.main-container .container {  
+      display: flex ;
+      justify-content: flex-start;
+      flex-direction: row;
+      width: 50%;
+      align-items: center;
+}
+
+#dio,#mine {
+          padding: 0px 0px;
+          border: 10px double darkslateblue;
+          box-sizing: border-box;
+          width: 50%;
+          height: 240px;
+          object-fit: cover;
+          margin-bottom: 20px;
+          margin-top: 10px;
+          img {
+            height: 220px;
+            width: 100%;
+          }  
+  }   
+
+    
