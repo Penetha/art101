@@ -10,12 +10,15 @@
 
 #dio {
   padding: 0px 0px;
+  margin: contain;
   border: 10px double black;
   box-sizing: border-box;
+  box-decoration-break: slice;
   object-fit: cover;
   width: 26%;
+  height: 25%;
+  margin-bottom: -25px;
   float: inline-end;
-  
 }
 /* img {
   overflow-clip-margin: padding-box ;
