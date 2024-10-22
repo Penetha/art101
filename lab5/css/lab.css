@@ -43,7 +43,7 @@
       align-items: center;
 }
 
-#dio,#mine {
+#dio{
           padding: 0px 0px;
           border: 10px double darkslateblue;
           box-sizing: border-box;
@@ -55,8 +55,21 @@
           img {
             height: 220px;
             width: 100%;
-            object-fit: contain;
           }  
   }   
 
+  #mine {
+    padding: 0px 0px;
+    border: 10px double darkslateblue;
+    box-sizing: border-box;
+    width: 50%;
+    height: 240px;
+    object-fit: contain;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    img {
+      height: 220px;
+      width: 100%;
+    }  
+}  
     
