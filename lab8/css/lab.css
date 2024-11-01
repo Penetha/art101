@@ -1,0 +1,54 @@
+/* Here we can set styles for this lab page that we don't want to effect others pages */
+
+/* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
+.minor-section {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: solid 1px #888;
+  background-color: #DDD8C4;
+}
+
+.main-container {
+  display: flex;                     /* Use Flexbox to arrange children side by side */
+  justify-content: space-between;    /* Space between images and results */
+  align-items: flex-start;           /* Align items at the start */
+  margin-bottom: 20px;
+  flex-direction: row;
+  flex-wrap: wrap-reverse; 
+  width: auto;              
+}
+
+.main-container .minor-section {
+    display: flex;                     /* Use Flexbox to arrange results and script output side by side */
+    flex-direction: column;            /*Stack headers on top*/
+    justify-content: flex-start;       /*Align items at the start*/
+    width: 100%;                       
+    flex-wrap: wrap;
+    font-size: larger;
+    
+    #output{
+      width: 50%;
+      font-size: x-large;
+      text-wrap: stable;
+      
+    }
+    .output{
+      width: 50%;
+      border: 10px double darkblue;
+      font-weight:bolder;
+      font-family: cursive;
+      color: brown;
+      font-size: x-large;
+      background-color: mediumaquamarine;
+    }
+
+    .Tada {
+      height: 300px;
+      width: 40%;
+    } 
+}
+
+
+
+
+
