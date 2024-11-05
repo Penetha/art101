@@ -27,9 +27,10 @@ var new_results = list.map(function(x){
 })
 console.log("Square root operation results = ", new_results);
 
+// declaring a variable to store all results that should be displayed as output in webpage
 var mapResults = ["Double operation results: ","<br>","<br>", results,"<br>","<br>","<br>", "Square operation results: ","<br>","<br>", new_results];
 console.log(mapResults);
 
-//To display output in webpage.
+//To display all results as output in webpage.
 // Use jQuery to select the element by its ID and set the HTML content
 $("#output").html(mapResults);
