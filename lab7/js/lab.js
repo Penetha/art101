@@ -21,7 +21,6 @@ function userNameSort(userName) {
 }
 
 
-//To get input in webpage.
+//To get input and display output in webpage.
 input = document.writeln("What is your Name?","<br>","<br>", userName, "<br>","<br>", "Your name has been fixed successfully and displayed below","<br>","</br>", userNameSort(userName),"<br>")
-
 
