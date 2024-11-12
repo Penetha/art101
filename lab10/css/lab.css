@@ -1,0 +1,64 @@
+/* Here we can set styles for this lab page that we don't want to effect others pages */
+
+/* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
+.minor-section {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: solid 1px #888;
+  background-color: #DDD8C4;
+  font-family: 'love light';
+  font-size: xx-large;
+  font-weight: bold;
+  text-wrap: stable;
+}
+
+#make-convo{
+  width: 40%;
+  font-family: "Ballet", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: xx-large;
+  font-style: normal;
+  color: lightyellow;
+  text-shadow: 10px 0px 0px darkmagenta, 0px 10px 5px whitesmoke, 0px 0px 10px red;
+  background-image: linear-gradient(to right, #2ddbbe 0%, teal 21%, blueviolet 51%, mediumvioletred 100%);
+  font-style: oblique;
+  text-decoration-color: #3e8e41;
+  border: 2.5px solid darkred;
+  border-radius: 10px;
+  box-shadow: 0 5px #999;
+  /* transition: 0.5s; */
+  background-size: 200% auto;
+  position: relative;
+  left: 0;
+  right: 0px;
+}
+
+#make-convo:hover {background-position: right center;}
+
+#make-convo:active {
+  background-color: olive;
+  box-shadow: 0 5px #666;
+  transform: translateY(15px);
+  text-align: center;
+}
+
+
+/* output result styling */
+
+.text{
+  left: 30%;
+  font-family: "Karla Tamil Inclined", sans-serif;
+  font-weight: 50px;
+  font-style: normal;
+  text-shadow: 0px 0.2px 5px orange, 0px 0px 3px lightgoldenrodyellow, 7.5px 0px 0px orangered ;
+  height: 100px;
+  padding: 10px;
+  margin: 10px 10px;
+}
+
+
+
+
+
+
