@@ -29,7 +29,7 @@ $("#submit").click(function() {
   var gif = houseSorted[1];
   var mod = houseSorted[2];
   // Append a new div to our output div for each click
-  $("#output").append('<div class="text"><p>' + "You are sorted into the house:" + mod + '</p></div>');
-  $("#visual").append('<img src="' + image + '">');
-  $("#visual").append('<img src="' + gif + '">');
+  $("#output").append('<div class="text"><p>' + "You are sorted into the house:" + mod + image + '</p></div>');
+  $("#visual").append('<img id = photo src="' + image + '">');
+  $("#visual").append('<img id = graphic src="' + gif + '">');
 });
