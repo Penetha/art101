@@ -24,6 +24,20 @@ function sortHatString(inputString) {
   }
 }
 
+const audioElement = document.getElementById("bgAudio");
+const bgmusic = document.getElementById("bgm");
+
+// Function to toggle play/pause
+bgmusic.addEventListener("click", function() {
+    if (audioElement.paused) {
+        audioElement.play();
+        bgmusic.textContent = "Pause Music";
+    } else {
+        audioElement.pause();
+        bgmusic.textContent = "Play Music";
+    }
+});
+
 // click listener for button
 $("#submit").click(function() {
   var userName = $("#name").val(); // Get the user's input
@@ -34,6 +48,7 @@ $("#submit").click(function() {
   var prop = houseSorted[3];
   var bg = houseSorted[4];
   var newText = houseSorted[5];
+  // const audioElement = document.getElementById("bgAudio");
   $("#visual").empty();
   $("#output").empty();
   // Append a new div to our output div for each click
@@ -42,4 +57,8 @@ $("#submit").click(function() {
   $("#visual").append('<img id = photo src="' + image + '">');
   $("#visual").append('<img id = graphic src="' + gif + '">');
   $("#input-output").css(prop, bg)
+});
+
+$("#playAudio").click(function() {
+  document.getElementById("bgAudio").play();
 });

@@ -2,7 +2,7 @@
 <html>
 <head>
     <!-- This title is used for tabs and bookmarks -->
-    <title>Lab 10: JavaScript for the Web</title>
+    <title>Lab 12: Conditionals</title>
 
     <!-- Use UTF character set, a good idea with any webpage -->
     <meta charset="UTF-8" />
@@ -16,9 +16,7 @@
     <!-- Google font embedded code link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Karla+Tamil+Inclined:wght@400;700&family=Love+Light&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Almendra+SC:wght@400&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Almendra+SC&family=Cinzel+Decorative:wght@400;700;900&family=Eagle+Lake&family=Kings&display=swap" rel="stylesheet">
 
     <!-- load jQuery library to make javascript easier (must be above our lab js)-->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
@@ -34,26 +32,30 @@
             <div class="minor-section">
                     <h2>Challenge</h2>
                     <div id="challenge"></div>
-                    <p>Tha lab was straightforward. It took time to understand how the funtcion logic works.</p>
+                    <p>Tha lab was quite fun and it took time to figure out if all possible conditions have been satisfied. I tried exploring a lot of features like adding audio, updating page results and background for each condition, different font styles and color gradients.</p>
             </div>
 
             <div class="minor-section">
                     <h2>Problems</h2>
                     <div id="problems"></div>
-                    <p>I tried using an array of morals in tamil instead of the text for random display of text with the help of AI. </p>
+                    <p>I tried using different arrays of images for each result instead of just the text to be displayed, so faced quite issues with regards to simplifying the code and fitting in all different results I wanted. I faced issues inserting audio file and different font files, but resolved them with help of wesbot and chatgpt. </p>
             </div>
 
             <div class="minor-section">
             <h2>Results</h2>
                 <div id="input-output">
-                    <audio autoplay loop>
+                    <!-- <button id="playAudio">Play Background Music</button> -->
+                    <audio id="bgAudio" loop>
                         <source src="./img/theme.mp3" type="audio/mpeg">
                         /Your browser does not support the audio element./
                     </audio>
                     
                     <h3>The Sorting Hat will sort you into your house once you enter your full name.</h3>
-                    <input type="text" id="name" placeholder="Enter your name">
-                    <button id="submit">Submit and Sort</button>
+                    <div id="input">
+                        <button id="bgm">Play music</button>
+                        <input type="text" id="name" placeholder="Enter your name">
+                        <button id="submit">Submit and Sort</button>                        
+                    </div>
                     <div id="output"></div>
                     <div id="visual"></div>
                 </div>
