@@ -11,16 +11,16 @@ function sortHatString(inputString) {
     return ['','','','background-image',"url(./img/voldemort.gif)", "I am the only one who must not be named!!!!"];
   }
   else if (mod==0) {
-    return ["./img/dumb.gif", "./img/g.jpeg", "./img/gryffin.gif", "background", "linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(203,15,42,1) 50%, rgba(241,172,41,1) 100%)", "You are sorted into the house of"];
+    return ["<img id = dumble src= './img/dumb.gif'>", "<img id = photo src= './img/g.jpeg'>", "<img id = graphic src= './img/gryffin.gif'>", "background", "linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(203,15,42,1) 50%, rgba(241,172,41,1) 100%)", "You are sorted into the house of"];
   }
   else if (mod==1) {
-    return ["./img/dumb.gif", "./img/r.jpeg", "./img/raven.gif", "background", "linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(162,171,178,1) 50%, rgba(11,90,137,1) 100%)", "You are sorted into the house of"];
+    return ["<img id = dumble src= './img/dumb.gif'>", "<img id = photo src= './img/r.jpeg'>", "<img id = graphic src= './img/raven.gif'>", "background", "linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(162,171,178,1) 50%, rgba(11,90,137,1) 100%)", "You are sorted into the house of"];
   }
   else if (mod==2) {
-    return ["./img/dumb.gif", "./img/s.jpeg", "./img/sly.gif", "background", "linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(191,195,198,1) 50%, rgba(14,91,81,1) 100%)", "You are sorted into the house of"];
+    return ["<img id = dumble src= './img/dumb.gif'>", "<img id = photo src= './img/s.jpeg'>", "<img id = graphic src= './img/sly.gif'>", "background", "linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(191,195,198,1) 50%, rgba(14,91,81,1) 100%)", "You are sorted into the house of"];
   }
   else if (mod==3) {
-    return ["./img/dumb.gif", "./img/h.jpeg", "./img/huff.gif", "background", "linear-gradient(90deg, hsla(0, 0%, 0%, 1) 0%, hsla(264, 3%, 32%, 1) 30%, hsla(0, 0%, 95%, 1) 60%, hsla(42, 84%, 52%, 1) 100%, hsla(258, 40%, 68%, 1) 100%)", "You are sorted into the house of"];
+    return ["<img id = dumble src= './img/dumb.gif'>", "<img id = photo src= './img/h.jpeg'>", "<img id = graphic src= './img/huff.gif'>", "background", "linear-gradient(90deg, hsla(0, 0%, 0%, 1) 0%, hsla(264, 3%, 32%, 1) 30%, hsla(0, 0%, 95%, 1) 60%, hsla(42, 84%, 52%, 1) 100%, hsla(258, 40%, 68%, 1) 100%)", "You are sorted into the house of"];
   }
 }
 
@@ -53,12 +53,9 @@ $("#submit").click(function() {
   $("#output").empty();
   // Append a new div to our output div for each click
   $("#output").append('<div class="text"><p>' + "Hey "+ userName + "! "+ newText + '</p></div>');
-  $("#visual").append('<img id = dumble src= "' + prof + '">');
-  $("#visual").append('<img id = photo src="' + image + '">');
-  $("#visual").append('<img id = graphic src="' + gif + '">');
+  // $("#visual").append('<img id = dumble src= "' + prof + '">');
+  $("#visual").append(prof)
+  $("#visual").append(image)
+  $("#visual").append(gif)
   $("#input-output").css(prop, bg)
-});
-
-$("#playAudio").click(function() {
-  document.getElementById("bgAudio").play();
 });
