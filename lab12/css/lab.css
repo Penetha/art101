@@ -25,9 +25,17 @@
   border: solid 1px #888;
   background-color: #DDD8C4;
   font-family: 'Kings', serif ;
-  font-size: 2vw;
+  font-size: 1vw;
   font-weight: bold;
   text-wrap: stable;
+}
+
+#hat{
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle; /* Optional: Aligns them vertically */
+  width: 12vw;
+  height: auto;
 }
 
 /* Styking the buttons and input field */
@@ -37,7 +45,7 @@
   justify-content: space-between; /* Space out elements (photo on left, graphic on right) */
   padding: 0.1vw;
   width: 99%;
-  height: 8vw;
+  height: 4vw;
   padding-bottom: 0.25vw;
 }
 
@@ -48,7 +56,7 @@
   font-family: "Magic1", serif;
   font-optical-sizing: auto;
   font-weight: 2vw;
-  font-size: 2.5vw;
+  font-size: 1.5vw;
   font-style: normal;
   color: maroon;
   height: auto;
@@ -84,10 +92,10 @@
 #name{
   /* left: 15%; */
   text-align: center;
-  font-size: 3vw;
+  font-size: 2vw;
   font-stretch: ultra-expanded;
   font-family: "Kings", serif;
-  font-weight: 4vw;
+  font-weight: 2vw;
   text-shadow: 0.2vw 0vw 0vw orange, 0vw 0.05vw 0vw lightyellow, 0vw 0vw 0.15vw lightpink;
   color: black;
   height: auto;
@@ -104,7 +112,7 @@
   font-family: "Magic2", serif;
   font-optical-sizing: auto;
   font-weight: 500;
-  font-size: 2.5vw;
+  font-size: 1.5vw;
   font-style: normal;
   color: maroon;
   height: auto;
@@ -133,7 +141,7 @@
 
 /* output result styling */
 .text{
-  font-size: 2.5vw;
+  font-size: 2vw;
   font-family: "Harry", serif;
   font-weight: 2vw;
   text-shadow: 0vw 0.02vw 0.10vw orange, 0vw 0.20vw 0vw turquoise, 0.35vw 0vw 0vw yellow ;
@@ -146,27 +154,30 @@
   width:100%;
   padding: 0.1vw;
   background-color: #DDD8C4 ;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: cover;
   color:black;
+  height: auto; 
 }
 
 /* styling text before input field */
 h3{
   font-family: Magic1, serif;
-  font-size: 2.5vw;
+  font-size: 2vw;
   font-weight: 2vw;
   text-shadow: 0vw 0.2vw 0.8vw lightgreen, 0vw 0.26vw 0vw orange, 0.21vw 0vw 0vw lemonchiffon;
   color: rgba(95, 7, 7, 0.897);
-  text-align: center;
-
+  /* text-align: center; */
+  display: inline-block;
+  vertical-align: middle; /* Optional: Aligns them vertically */
+  padding-inline-start: 20%;
 }
 
 /* styling the headings */
 h2,h1{
   font-family: 'Almendra SC', 'Cinzel Decorative', serif;
-  font-size: 3vw;
-  text-shadow: 0.3vw 0vw 0vw orange, 0vw 0.15vw 0vw lightyellow, 0vw 0vw 0.15vw lightpink;
+  font-size: 2.5vw;
+  text-shadow: 0.3vw 0vw 0vw orange, 0vw 0.15vw 0vw maroon, 0vw 0vw 0.15vw lightgoldenrodyellow;
 }
 
 /* styling the results in output */
@@ -177,7 +188,7 @@ h2,h1{
   padding: 0.1vw;
   background-color: rgba(139, 0, 0, 0.064); /* Optional: Light background to see spacing more clearly */
   width: 99.99%;
-  height: 30vw;
+  height: 15vw;
   padding-bottom: 0.25vw;
   
 }
@@ -185,13 +196,13 @@ h2,h1{
 #visual img:nth-child(2) {
   margin-left: 0.1vw; /* Slightly indent photo from the left */
   width: 55%;
-  height: 30vw;
+  height: 15vw;
 }
 
 #visual img:nth-child(1) {
   margin-left: 0.01vw; /* Slightly indent photo from the left */
   width: 25%;
-  height: 30vw;
+  height: 15vw;
 }
 
 
@@ -203,7 +214,7 @@ h2,h1{
   margin-bottom: auto;
   margin-top: auto;
   margin-right: 0.1vw;
-  height: 30vw;
+  height: 15vw;
 }
 
 

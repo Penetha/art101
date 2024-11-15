@@ -57,5 +57,4 @@ $("#submit").click(function() {
   $("#visual").append(image)
   $("#visual").append(gif)
   $("#input-output").css(prop, bg)
-  $("#input-output").css("background-repeat", "no-repeat")
 });
