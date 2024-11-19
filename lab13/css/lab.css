@@ -23,7 +23,7 @@
   width: 100%;
   height: 4vw;
   padding-bottom: 0.25vw;
-  background: linear-gradient(135deg, rgb(234, 233, 233) 0%, rgba(191,195,198,1) 50%, rgb(28, 174, 154) 100%);
+  background: linear-gradient(180deg, rgb(146, 143, 143) 0%, rgba(191,195,198,1) 30%, rgb(32, 222, 197) 70%, rgb(28, 174, 154) 100%);
 }
 
 
@@ -82,7 +82,6 @@
   width: 10%;
   background-color: rgba(234, 193, 71, 0.039);
   border: 0.5vw double maroon;
-  box-shadow: 10vw 10vw 10vw rgba(255, 166, 0, 0.69), 10vw 10vw 10vw rgba(252, 232, 59, 0.69);
   align-self: flex-start;
   vertical-align: bottom;
   flex-direction: row-reverse;
@@ -123,10 +122,10 @@
 
 /* output result styling */
 .text{
-  font-size: 1.5vw;
+  font-size: 1.45vw;
   font-family: "Kings", serif;
   font-weight: 1vw;
-  text-shadow: 0vw 0.02vw 0.10vw orange, 0vw 0.20vw 0vw turquoise, 0.35vw 0vw 0vw yellow ;
+  text-shadow: 0vw 0.02vw 0.10vw orange, 0vw 0.20vw 0vw rgb(224, 101, 64), 0.15vw 0vw 0vw yellow ;
   color: rgb(65, 16, 16);
   text-align: left;
   column-gap: 0.02vw;
@@ -136,7 +135,7 @@
 #input-output{
   width:100%;
   padding: 0.1vw;
-  background-color: rgb(24, 199, 144) ;
+  background-color: rgb(239, 105, 107) ;
   background-repeat: repeat;
   background-size: cover;
   color:black;
@@ -146,17 +145,16 @@
 #inputsFactor{
   width:100%;
   padding: 0.01vw;
-  background: linear-gradient(135deg, rgb(241, 240, 240) 0%, rgba(191,195,198,1) 50%, rgb(30, 152, 136) 100%);
+  background: linear-gradient(180deg, rgb(241, 240, 240) 0%, rgba(191,195,198,1) 50%, rgb(30, 152, 136) 100%);
   height: auto; 
   font-size: 1vw;
   font-family: "Eagle-lake", serif;
   font-weight: 1vw;
-  text-shadow: 0vw 0.02vw 0.10vw orange, 0vw 0.20vw 0vw turquoise, 0.35vw 0vw 0vw yellow ;
+  text-shadow: 0vw 0.02vw 0.05vw orange, 0vw 0.10vw 0vw rgb(245, 147, 134), 0.15vw 0vw 0vw yellow ;
   color: rgb(65, 16, 16);
   text-align: left;
   box-sizing: 1vw;
   border: 0.5vw double maroon;
-  box-shadow: 10vw 10vw 10vw rgba(255, 166, 0, 0.69), 10vw 10vw 10vw rgba(252, 232, 59, 0.69);
   align-self: flex-start;
   vertical-align: bottom;
   flex-direction: row-reverse;
@@ -185,7 +183,7 @@ h4, h5{
   font-family: Kings, serif;
   font-size: 1vw;
   font-weight: 1vw;
-  text-shadow: 0vw 0.12vw 0.4vw lightgreen, 0vw 0.26vw 0vw orange, 0.21vw 0vw 0vw lemonchiffon;
+  text-shadow: 0vw 0.12vw 0.2vw lightgreen, 0vw 0.16vw 0vw orange, 0.21vw 0vw 0vw lemonchiffon;
   color: rgba(95, 7, 7, 0.897);
   vertical-align: top; /* Optional: Aligns them vertically */
   padding-inline-start: 1%;

@@ -19,7 +19,7 @@ function fizzBuzz(loopCount, factorList, factorStr) {
 function addFactor(factor) {
   let factorList = [];
   let factorStr = [];
-  const outputStringList = ["Fizz", "Buzz", "Boom", "Bang", "Blop", "Duhh", "KaDoom", "Pikachu", "Dishoom", "HaHaHa"];
+  const outputStringList = ["Fizz", "Buzz", "Boom", "Bang", "Blop", "Duhh", "Tudum", "Pika", "Pom", "Ping"];
   
   $("#inputsFactor").empty(); // Clear any existing inputs
   for (let i = 0; i < factor; i++) {
@@ -76,7 +76,7 @@ $(document).on("click", "#run", function() {
 
   const fizzBuzzOutput = fizzBuzz(loopCount, factorValues, factorsStr); // Perform fizzBuzz
 
-  $("#output").html(`<div class="text"><p>${fizzBuzzOutput}</p></div>`); // Display output
+  $("#output").html(`<div class="text"><h3>FizzBuzz Output is here!!!!</h3><p>${fizzBuzzOutput}</p></div>`); // Display output
 
 });
 
