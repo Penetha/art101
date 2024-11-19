@@ -1,0 +1,259 @@
+/* Here we can set styles for this lab page that we don't want to effect others pages */
+
+
+/* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
+.minor-section {
+  padding: 0.2vw;
+  margin-bottom: 0.2vw;
+  border: solid 1px #888;
+  background-color: #DDD8C4;
+  font-family: 'Kings', serif ;
+  font-size: 1vw;
+  font-weight: bold;
+  text-wrap: stable;
+}
+
+
+/* Styking the buttons and input field */
+#inputs {
+  display: flex;
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Space out elements (photo on left, graphic on right) */
+  padding: 0.1vw;
+  width: 100%;
+  height: 4vw;
+  padding-bottom: 0.25vw;
+  background: linear-gradient(135deg, rgb(234, 233, 233) 0%, rgba(191,195,198,1) 50%, rgb(28, 174, 154) 100%);
+}
+
+
+/* submit button styling */
+#submit{
+  width: 10%;
+  font-family: "Magic1", serif;
+  font-optical-sizing: auto;
+  font-weight: 2vw;
+  font-size: 1.5vw;
+  font-style: normal;
+  color: maroon;
+  height: auto;
+  text-shadow: 0.25vw 0vw 0vw rgb(232, 246, 150), 0vw 0.05vw 0vw lightyellow, 0vw 0vw 0.15vw lightpink;
+  background-image: linear-gradient(to right, brown, rgb(255, 145, 0), #ff0000, #fdcf58 100%);
+  font-style: oblique;
+  text-decoration-color: #3e8e41;
+  border: 0.1vw double darkred;
+  border-radius: 0.1vw;
+  box-shadow: 0.2vw 0.2vw 0.2vw lightsalmon, 0.2vw 0.2vw 0.2vw rgba(252, 232, 59, 0.69);
+  /* transition: 0.5s; */
+  background-size: 200% auto;
+  /* position: relative;
+  left: 200px;
+  right: auto; */
+  text-wrap: balance;
+  text-size-adjust: auto;
+  text-overflow: ellipsis;
+  flex-direction: row-reverse;
+  align-self: flex-start;
+  vertical-align: middle;
+  z-index: 10000;
+}
+
+
+#submit:hover {background-position: right center;}
+
+#submit:active {
+  background-color: olive;
+  box-shadow: 0 0.05vw #666;
+  transform: translateY(15px);
+  text-align: center;
+}
+
+/* Text box styling */
+#loopCount, #factorCount{
+  /* left: 15%; */
+  text-align: center;
+  font-size: 1vw;
+  font-stretch: ultra-expanded;
+  font-family: "Kings", serif;
+  font-weight: 2vw;
+  text-shadow: 0.2vw 0vw 0vw orange, 0vw 0.05vw 0vw lightyellow, 0vw 0vw 0.15vw lightpink;
+  color: black;
+  height: auto;
+  width: 10%;
+  background-color: rgba(234, 193, 71, 0.039);
+  border: 0.5vw double maroon;
+  box-shadow: 10vw 10vw 10vw rgba(255, 166, 0, 0.69), 10vw 10vw 10vw rgba(252, 232, 59, 0.69);
+  align-self: flex-start;
+  vertical-align: bottom;
+  flex-direction: row-reverse;
+}
+
+/* bgm button styling */
+#run{
+  width: 15%;
+  font-family: "Kings", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-size: 1.5vw;
+  font-style: normal;
+  color: maroon;
+  height: auto;
+  text-shadow: 0.25vw 0vw 0vw rgb(232, 246, 150), 0vw 0.05vw 0vw lightyellow, 0vw 0vw 0.15vw lightpink;
+  background-image: linear-gradient(to right, brown 0%,orange 55%, lightseagreen 71%, orangered 100%);
+  font-style: oblique;
+  text-decoration-color: #3e8e41;
+  border: 0.05vw double darkred;
+  border-radius: 1vw;
+  box-shadow: 0.2vw 0.2vw 0.2vw lightsalmon, 0.2vw 0.2vw 0.2vw rgba(252, 232, 59, 0.69);
+  background-size: 200% auto;
+  text-wrap: balance;
+  overflow-wrap: break-word;
+  align-self: flex-start;
+}
+
+#run:hover {background-position: right center;}
+
+#run:active {
+  background-color: olive;
+  box-shadow: 0 0.2vw #666;
+  transform: translateY(15px);
+  text-align: center;
+}
+
+
+/* output result styling */
+.text{
+  font-size: 1.5vw;
+  font-family: "Kings", serif;
+  font-weight: 1vw;
+  text-shadow: 0vw 0.02vw 0.10vw orange, 0vw 0.20vw 0vw turquoise, 0.35vw 0vw 0vw yellow ;
+  color: rgb(65, 16, 16);
+  text-align: left;
+  column-gap: 0.02vw;
+}
+
+
+#input-output{
+  width:100%;
+  padding: 0.1vw;
+  background-color: rgb(24, 199, 144) ;
+  background-repeat: repeat;
+  background-size: cover;
+  color:black;
+  height: auto; 
+}
+
+#inputsFactor{
+  width:100%;
+  padding: 0.01vw;
+  background: linear-gradient(135deg, rgb(241, 240, 240) 0%, rgba(191,195,198,1) 50%, rgb(30, 152, 136) 100%);
+  height: auto; 
+  font-size: 1vw;
+  font-family: "Eagle-lake", serif;
+  font-weight: 1vw;
+  text-shadow: 0vw 0.02vw 0.10vw orange, 0vw 0.20vw 0vw turquoise, 0.35vw 0vw 0vw yellow ;
+  color: rgb(65, 16, 16);
+  text-align: left;
+  box-sizing: 1vw;
+  border: 0.5vw double maroon;
+  box-shadow: 10vw 10vw 10vw rgba(255, 166, 0, 0.69), 10vw 10vw 10vw rgba(252, 232, 59, 0.69);
+  align-self: flex-start;
+  vertical-align: bottom;
+  flex-direction: row-reverse;
+  [id^="f"].factorid{
+    width: 30%;
+    height: auto;
+    font-size: 1vw;
+  } 
+}
+
+
+
+/* styling text before input field */
+h3{
+  font-family: Magic1, serif;
+  font-size: 2vw;
+  font-weight: 2vw;
+  text-shadow: 0vw 0.2vw 0.8vw lightgreen, 0vw 0.26vw 0vw orange, 0.21vw 0vw 0vw lemonchiffon;
+  color: rgba(95, 7, 7, 0.897);
+  /* text-align: center; */
+  display: inline-block;
+  padding-inline-start: 1%;
+}
+
+h4, h5{
+  font-family: Kings, serif;
+  font-size: 1vw;
+  font-weight: 1vw;
+  text-shadow: 0vw 0.12vw 0.4vw lightgreen, 0vw 0.26vw 0vw orange, 0.21vw 0vw 0vw lemonchiffon;
+  color: rgba(95, 7, 7, 0.897);
+  vertical-align: top; /* Optional: Aligns them vertically */
+  padding-inline-start: 1%;
+  width: 25%;
+}
+
+
+/* styling the headings */
+h2,h1{
+  font-family: 'Almendra SC', 'Cinzel Decorative', serif;
+  font-size: 2.5vw;
+  text-shadow: 0.3vw 0vw 0vw orange, 0vw 0.15vw 0vw maroon, 0vw 0vw 0.15vw lightgoldenrodyellow;
+}
+
+/* styling the results in output */
+#output {
+  /* display: flex; */
+   /* Center items vertically */
+  justify-content: space-between; /* Space out elements (photo on left, graphic on right) */
+  padding: 0.5vw;
+  background: linear-gradient(180deg, rgb(241, 240, 240) 0%, rgba(191,195,198,1) 50%, rgb(105, 219, 204) 100%);
+  width: 99.99%;
+  height: auto;
+  padding-bottom: 0.25vw;
+  padding-top: 0.25vw;
+  text-wrap: pretty;
+  overflow-wrap: anywhere;
+  size: 0.5vw;
+  text-align: left;
+  align-self: flex-start;
+  display: inline-block;
+  column-gap: 0.02vw;
+  column-count: 3;
+  margin-top: 2vw;
+  margin-bottom: 1vw;
+  
+}
+
+@keyframes waveEffect {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px); /* Move up */
+  }
+  100% {
+    transform: translateY(0); /* Return to normal */
+  }
+}
+
+#output {
+  display: inline-block;
+  animation: waveEffect 0.5s ease-in-out infinite;
+}
+
+#output:nth-child(odd) {
+  animation-delay: 0.1s;
+}
+
+#output:nth-child(even) {
+  animation-delay: 0.3s;
+}
+
+
+
+
+
+
+
+
+
