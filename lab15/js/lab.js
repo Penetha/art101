@@ -43,3 +43,14 @@ $("#activate").click(function () {
         }
     });
 });
+
+// Show the dialog and overlay
+$('#openDialog').click(function() {
+    $('#overlay, #dialogBox').fadeIn();
+});
+
+// Hide the dialog and overlay
+$('#closeDialog, #overlay').click(function() {
+    $('#overlay, #dialogBox').fadeOut();
+});
+
