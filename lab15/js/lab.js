@@ -44,13 +44,15 @@ $("#activate").click(function () {
     });
 });
 
+$("#dialogBox").hide();
+
 // Show the dialog and overlay
 $('#openDialog').click(function() {
-    $('#overlay, #dialogBox').fadeIn();
+    $('#overlay, #dialogBox').show();
 });
 
 // Hide the dialog and overlay
 $('#closeDialog, #overlay').click(function() {
-    $('#overlay, #dialogBox').fadeOut();
+    $('#overlay, #dialogBox').hide();
 });
 
