@@ -14,32 +14,34 @@
     color: darkred;
   }
 /* Text box styling */
-#pokemon{
+#comicID{
     /* left: 15%; */
     text-align: center;
     font-size: 2vw;
     font-stretch: ultra-expanded;
-    font-family: "Kings", serif;
+    font-family: "Walter Turncoat", serif;
     font-weight: 2vw;
     text-shadow: 0.2vw 0vw 0vw orange, 0vw 0.05vw 0vw lightyellow, 0vw 0vw 0.15vw lightpink;
     color: black;
     height: auto;
     width: 30%;
-    background-color: rgba(225, 243, 95, 0.792);
+    background-color: rgba(235, 122, 209, 0.792);
     border: 0.5vw double maroon;
     align-self: flex-start;
   }
     
-
+#buttons,#manual {
+    background-color: rgba(79, 216, 247, 0.679);
+}
 /* activate button styling */
-#activate{
+#fetch,#reload{
     width: 20vw;
-    font-family: "Cinzel Decorative", serif;
+    font-family: "Finger Paint", serif;
     font-optical-sizing: auto;
     font-weight: 2vw;
     font-size: 1.5vw;
     font-style: normal;
-    color: maroon;
+    color: rgb(6, 0, 0);
     height: auto;
     text-shadow: 0.25vw 0vw 0vw rgb(232, 246, 150), 0vw 0.05vw 0vw lightyellow, 0vw 0vw 0.15vw lightpink;
     background-image: linear-gradient(to right, brown, rgb(255, 145, 0), #ff0000, #fdcf58 100%);
@@ -57,9 +59,9 @@
   }
   
   
-#activate:hover {background-position: right center;}
+#fetch:hover {background-position: right center;}
 
-#activate:active {
+#fetch:active {
     background-color: olive;
     box-shadow: 0 0.05vw #666;
     transform: translateY(0.5vw);
@@ -80,11 +82,11 @@
 }
 
 /* pokemone image styling */
-#pokemonimage {
+#comicimage {
     display: inline-block;
-    animation: waveEffect 4s ease-in-out infinite;
-    width: 20vw;
-    height: 20vw;
+    animation: waveEffect 90s ease-in-out infinite;
+    width: 25vw;
+    height: 25vw;
 }
 
 #output {
@@ -92,7 +94,7 @@
     margin-bottom: 0.2vw;
     border: solid 1px #888;
     background-color: linen;
-    font-family: 'Kings', serif ;
+    font-family: 'Finger paint', serif ;
     font-size: 2vw;
     font-weight: bold;
     text-wrap: stable;
@@ -103,23 +105,63 @@
     padding: 0.2vw;
     margin-bottom: 0.2vw;
     border: solid 1px #888;
-    background-color: hotpink;
-    font-family: 'Kings', serif ;
+    background-color: rgb(225, 149, 250);
     font-size: 2vw;
     font-weight: bold;
     text-wrap: stable;
-    color: darkslategray;
+    color: rgb(234, 57, 26);
+    font-family: 'Walter Turncoat', serif ;
 }
 
 /* pokemon name highlight */
-#text {
-    background-image: linear-gradient(to left,red, rgb(255, 145, 0) ,purple);
+h5 {
+    background-image: linear-gradient(to right,red 0%, rgb(255, 145, 0)30%,rgb(32, 177, 117),purple 100%);
     background-clip:content-box; /* Clip the background to the text */
     -webkit-background-clip: text;
     color: transparent; /* Make the text itself transparent so the gradient shows */
     font-weight: bolder;
     font-size: 4vw;
-    font-family: 'Almendra SC', serif;
+    font-family: 'Finger paint', serif;
+    
+}
+
+/* Button styles */
+#specific,#random {
+    padding: 0.5vw 1vw;
+    font-family: "Finger Paint", serif;
+    font-optical-sizing: auto;
+    font-weight: bolder;
+    font-size: 1.5vw;
+    font-style: normal;
+    text-shadow: 0.2vw 0vw 0vw rgb(232, 246, 150), 0vw 0.05vw 0vw lightyellow, 0vw 0vw 0.15vw lightpink;
+    background-image: linear-gradient(to right, #15eeb8 0%, rgb(93, 216, 232) 50%, rgb(47, 222, 216) 100%);
+    color: rgb(196, 5, 94);
+    border: none;
+    border-radius: 0.25vw;
+    width: 45%;
+    height: auto;
+    text-overflow: clip;
+    text-wrap: pretty;
+    z-index: 1000;
+    transition: background-image 0.3s ease, border-color 0.3s ease;
+    background-size: 200% auto;
+}
+
+/* Grayed out button effect for disabled buttons */
+button:disabled {
+    background-color: #ddd; /* Light gray background */
+    color: #aaa; /* Light gray text */
+    border: 1px solid #ccc; /* Lighter border */
+    cursor: not-allowed; /* Change cursor to indicate the button is not clickable */
+    opacity: 0.6; /* Make the button slightly transparent */
+}
+
+/* Optional: Add a hover effect for non-disabled buttons */
+button:not(:disabled):hover {
+    background-color: #007bff; /* Change background on hover */
+    color: white; /* Change text color on hover */
+    transform: scale(1.05); /* Slight scale effect on hover */
+    transition: all 0.3s ease; /* Smooth transition */
 }
 
 /* Style for the dialog box */
@@ -157,9 +199,19 @@ p1,p2 {
     text-wrap: pretty;
 }
 
-h2,h3 {
+h2,#manual {
     font-size: 2vw;
+    font-family: 'Walter Turncoat', serif ;
+    text-shadow: 0.2vw 0vw 0vw rgb(232, 246, 150), 0vw 0.05vw 0vw lightyellow, 0vw 0vw 0.15vw lightpink;
 }
+
+h4,h3{
+    font-size: 3vw;
+    color: brown;
+    font-family: 'Walter Turncoat', serif ;
+    text-shadow: 0.2vw 0vw 0vw rgb(232, 246, 150), 0vw 0.05vw 0vw lightyellow, 0vw 0vw 0.15vw lightpink;
+}
+
 /* Style for the background overlay */
 #overlay {
     display: none;  /* Initially hidden */
