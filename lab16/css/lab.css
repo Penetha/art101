@@ -1,0 +1,222 @@
+/* Here we can set styles for this lab page that we don't want to effect others pages */
+
+
+/* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
+.minor-section, .experience {
+    padding: 0.2vw;
+    margin-bottom: 5vw;
+    border: solid 1px #888;
+    background-color: #f7b8f4;
+    font-family: 'Kings', serif ;
+    font-size: 1vw;
+    font-weight: bold;
+    text-wrap: stable;
+    color: darkred;
+  }
+/* Text box styling */
+#pokemon{
+    /* left: 15%; */
+    text-align: center;
+    font-size: 2vw;
+    font-stretch: ultra-expanded;
+    font-family: "Kings", serif;
+    font-weight: 2vw;
+    text-shadow: 0.2vw 0vw 0vw orange, 0vw 0.05vw 0vw lightyellow, 0vw 0vw 0.15vw lightpink;
+    color: black;
+    height: auto;
+    width: 30%;
+    background-color: rgba(225, 243, 95, 0.792);
+    border: 0.5vw double maroon;
+    align-self: flex-start;
+  }
+    
+
+/* activate button styling */
+#activate{
+    width: 20vw;
+    font-family: "Cinzel Decorative", serif;
+    font-optical-sizing: auto;
+    font-weight: 2vw;
+    font-size: 1.5vw;
+    font-style: normal;
+    color: maroon;
+    height: auto;
+    text-shadow: 0.25vw 0vw 0vw rgb(232, 246, 150), 0vw 0.05vw 0vw lightyellow, 0vw 0vw 0.15vw lightpink;
+    background-image: linear-gradient(to right, brown, rgb(255, 145, 0), #ff0000, #fdcf58 100%);
+    font-style: oblique;
+    text-decoration-color: #3e8e41;
+    border: 0.1vw double darkred;
+    border-radius: 0.1vw;
+    box-shadow: 0.2vw 0.2vw 0.2vw lightsalmon, 0.2vw 0.2vw 0.2vw rgba(252, 232, 59, 0.69);
+    background-size: 200% auto;
+    text-wrap: balance;
+    text-size-adjust: auto;
+    text-overflow: ellipsis;
+    align-self: flex-start;
+    z-index: 1000;
+  }
+  
+  
+#activate:hover {background-position: right center;}
+
+#activate:active {
+    background-color: olive;
+    box-shadow: 0 0.05vw #666;
+    transform: translateY(0.5vw);
+    text-align: center;
+}
+
+/* wave effect for the image */
+@keyframes waveEffect {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(50vw); /* Move up */
+    }
+    100% {
+        transform: translateX(0); /* Return to normal */
+    }
+}
+
+/* pokemone image styling */
+#pokemonimage {
+    display: inline-block;
+    animation: waveEffect 4s ease-in-out infinite;
+    width: 20vw;
+    height: 20vw;
+}
+
+#output {
+    padding: 0.2vw;
+    margin-bottom: 0.2vw;
+    border: solid 1px #888;
+    background-color: linen;
+    font-family: 'Kings', serif ;
+    font-size: 2vw;
+    font-weight: bold;
+    text-wrap: stable;
+    color: darkslateblue;
+}
+
+#input {
+    padding: 0.2vw;
+    margin-bottom: 0.2vw;
+    border: solid 1px #888;
+    background-color: hotpink;
+    font-family: 'Kings', serif ;
+    font-size: 2vw;
+    font-weight: bold;
+    text-wrap: stable;
+    color: darkslategray;
+}
+
+/* pokemon name highlight */
+#text {
+    background-image: linear-gradient(to left,red, rgb(255, 145, 0) ,purple);
+    background-clip:content-box; /* Clip the background to the text */
+    -webkit-background-clip: text;
+    color: transparent; /* Make the text itself transparent so the gradient shows */
+    font-weight: bolder;
+    font-size: 4vw;
+    font-family: 'Almendra SC', serif;
+}
+
+/* Style for the dialog box */
+#dialogBox {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #daf389;
+    padding: 2vw;  /* Adjust padding to 2% of viewport width */
+    border-radius: 1vw;  /* Rounded corners proportional to viewport width */
+    box-shadow: 0 0.5vw 1vw rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+    width: 70vw; /* Width of the box proportional to the viewport width */
+    max-width: 80vw; /* Maximum width to prevent too large on wide screens */
+    text-align: center;
+    /* position: relative; */
+    clip-path: polygon(0 0, 80% 0%, 100% 100%, 0% 100%, 20% 80%); /* Shape for the speech bubble */
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    height: auto; /* Set height to auto to allow space for content */
+    max-height: 70vh; /* Prevents excessive height on very tall screens */
+    overflow: auto; /* Allows content to scroll if it exceeds the max height */
+}
+
+/* Style for the individual content sections */
+p1,p2 {
+    margin: 0; /* Remove default margin */
+    font-size: 1vw; /* Adjust font size to fit inside the dialog box */
+    font-weight: bold; /* Make the text bold */
+    color: mediumvioletred; /* Text color */
+    padding: 1.5vw;
+    text-wrap: pretty;
+}
+
+h2,h3 {
+    font-size: 2vw;
+}
+/* Style for the background overlay */
+#overlay {
+    display: none;  /* Initially hidden */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(154, 154, 154, 0.206);
+    z-index: 1;
+}
+
+/* Button styles */
+#openDialog {
+    padding: 0.5vw 1vw;
+    font-family: "Cinzel Decorative", serif;
+    font-optical-sizing: auto;
+    font-weight: bolder;
+    font-size: 1.5vw;
+    font-style: normal;
+    text-shadow: 0.2vw 0vw 0vw rgb(232, 246, 150), 0vw 0.05vw 0vw lightyellow, 0vw 0vw 0.15vw lightpink;
+    background-image: linear-gradient(to right, #4b3896 0%,rgb(31, 69, 224) 30%, rgb(93, 216, 232) 70%, rgb(47, 222, 216) 100%);
+    color: rgb(41, 3, 3);
+    border: none;
+    border-radius: 0.25vw;
+    width: 50vw;
+    height: 10vh;
+    text-overflow: clip;
+    text-wrap: pretty;
+    z-index: 1000;
+    transition: background-image 0.3s ease, border-color 0.3s ease;
+    background-size: 200% auto;
+}
+
+#openDialog:hover {background-position: right center;}
+
+#openDialog:active {
+    background-color: olive;
+    box-shadow: 0 0.05vw #666;
+    transform: translateX(20vw);
+    text-align: center;
+}
+
+
+
+#closeDialog {
+    padding: 0.5vw 1vwx;
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    border-radius: 0.25vw;
+    cursor: pointer;
+    width: 5vw;
+    height: 5vw;
+    font-size: 1vw;
+    text-overflow: clip;
+    text-wrap: pretty;
+}
+
+
